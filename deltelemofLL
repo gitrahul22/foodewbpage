@@ -1,0 +1,24 @@
+//code that deletes element in java LL 
+// Happy learning ; remove element |
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+class Main {
+    public static void main(String[] args) {
+        ArrayList<String> animals= new ArrayList<>();
+
+        // add elements
+        animals.add("Dog");
+        animals.add("Cat");
+        animals.add("Horse");
+        System.out.println("LinkedList: " + animals);
+
+        // creating an object of ListIterator
+        ListIterator<String> listIterate = animals.listIterator();
+        listIterate.next();
+
+        // चemove element returned by next()
+        listIterate.remove();
+        System.out.println("New LinkedList: " + animals);
+    }
+}
